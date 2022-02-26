@@ -1,16 +1,16 @@
-name: auto
+name: buildAndDeploy
 
 on:
   push
 
 jobs:
-  auto:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
       - uses: actions/checkout@master
       
-      - name: auto
+      - name: buildAndDeploy
         uses: JamesIves/github-pages-deploy-action@master
         env: 
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}

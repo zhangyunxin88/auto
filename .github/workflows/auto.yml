@@ -6,7 +6,6 @@ on:
 jobs:
   auto:
     runs-on: ubuntu-latest
-
     steps:
       - name: checkout
       - uses: actions/checkout@master
